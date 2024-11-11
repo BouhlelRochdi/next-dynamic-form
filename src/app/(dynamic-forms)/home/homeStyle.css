@@ -1,0 +1,24 @@
+/* Home.css */
+
+.home-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px; /* Padding around the container */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    font-size: 2rem; /* Font size for the main heading */
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-wrapper {
+    overflow: auto; /* Add scrollbars if needed */
+    width: 100%; /* Full width */
+}

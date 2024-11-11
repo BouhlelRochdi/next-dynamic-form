@@ -1,0 +1,126 @@
+[
+    {
+        "type": "input",
+        "label": "Username",
+        "name": "username",
+        "placeholder": "Enter your username",
+        "validation": {
+            "required": true
+        }
+    },
+    {
+        "type": "input",
+        "label": "Password",
+        "name": "password",
+        "placeholder": "Enter your password",
+        "validation": {
+            "required": true
+        }
+    },
+    {
+        "type": "input",
+        "label": "First Name",
+        "name": "firstName",
+        "placeholder": "Enter your first name",
+        "validation": {
+            "required": true,
+            "minLength": 2
+        }
+    },
+    {
+        "type": "input",
+        "label": "Last Name",
+        "name": "lastName",
+        "placeholder": "Enter your last name",
+        "validation": {
+            "required": true,
+            "minLength": 2
+        }
+    },
+    {
+        "type": "input",
+        "label": "Email",
+        "name": "email",
+        "placeholder": "Enter your email",
+        "validation": {
+            "required": true,
+            "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+        }
+    },
+    {
+        "type": "input",
+        "label": "Age",
+        "name": "age",
+        "placeholder": "Enter your age",
+        "validation": {
+            "required": true,
+            "min": 18,
+            "max": 99
+        }
+    },
+    {
+        "type": "input",
+        "label": "Phone",
+        "name": "phone",
+        "placeholder": "Enter your phone number",
+        "validation": {
+            "required": true,
+            "pattern": "^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$",
+            "minLength": 10
+            }
+    },
+    {
+        "name": "location",
+        "label": "Location",
+        "type": "object",
+        "fields": [
+          {
+            "name": "address",
+            "label": "Address",
+            "type": "text",
+            "placeholder": "Enter your address",
+            "validation": { "required": true }
+          },
+          {
+            "name": "zipCode",
+            "label": "Zip Code",
+            "type": "number",
+            "placeholder": "Enter your zip code",
+            "validation": { "required": true, "min": 10000, "max": 99999 }
+          },
+          {
+            "name": "city",
+            "label": "City",
+            "type": "text",
+            "placeholder": "Enter your city",
+            "validation": { "required": true }
+          }
+        ]
+      },
+    {
+        "type": "select",
+        "label": "User  Role",
+        "name": "role",
+        "options": [
+            { "value": "admin", "label": "Admin" },
+            { "value": "customer", "label": "Customer" },
+            { "value": "invited", "label": "Invited" }
+        ],
+        "validation": {
+            "required": true
+        }
+    },
+    {
+        "type": "radio",
+        "label": "Gender",
+        "name": "gender",
+        "options": [
+            { "value": "male", "label": "Male" },
+            { "value": "female", "label": "Female" },
+            { "value": "other", "label": "Other" }
+        ],
+        "validation": {
+            "required": true
+        }
+    }
+]
